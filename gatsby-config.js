@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `E-commerce Snipcart and Gatsby Starter`,
-    author: `Issy Dennis`,
+    title: `A Little Cattywampus`,
+    author: `Michael`,
     description: `A simple e-commerce shop using Gatsby and Snipcart.`,
     siteUrl: `https://gatsby-snipcart-starter.netlify.com/`,
   },
@@ -36,12 +36,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -58,12 +52,13 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-snipcart',
+      resolve: "gatsby-plugin-snipcart",
       options: {
         //replace with own Snipcart API key
-        apiKey: 'MjQ2MDY4MDctMDZkYi00ZTY0LWFlODItNzhlMmEzZDg1NTBiNjM2OTc2Nzk1NjcwMTU3MTkx',
+        apiKey:
+          "YWFiYjZiYWMtZGE0Zi00ZDlkLTlkNjAtNzg1NWJhODQxMTAzNjM3MDM4OTcyNDY2NTY5MzA1",
         autopop: true,
-          }
+      },
     },
     `gatsby-plugin-styled-components`,
   ],
