@@ -7,9 +7,8 @@ import HeaderMain from "./Headers/HeaderMain"
 import HeaderMinor from "./Headers/HeaderMinor"
 
 const PageWrapper = styled.div`
-  width: 100%;
+  width: 95vw;
   margin: 0 auto;
-  width: 90%;
 `
 
 const MainSection = styled.main`
@@ -21,6 +20,7 @@ const FooterStyled = styled.footer`
   width: 100%;
   padding: 20px;
   text-align: right;
+  background-color: #8dd4bd;
 
   @media (max-width: 600px) {
     text-align: center;
