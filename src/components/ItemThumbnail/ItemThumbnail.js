@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 const ItemThumbnailStyled = styled.div`
-  width: 350px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,7 @@ const Heading = styled.h3`
   font-weight: 900;
   text-align: center;
   width: 100%;
-  min-height: 85px;
+
   margin: auto;
 `
 
@@ -44,7 +44,7 @@ const LinkStyled = styled(Link)`
 
 const ImgStyled = styled(Img)`
   width: 100%;
-  height: 350px;
+  height: 150px;
 
   @media (max-width: 930px) {
     height: 250px;
@@ -62,7 +62,6 @@ const itemThumbnail = props => {
         <ImgStyled fluid={props.image} />
         <Heading>{props.heading}</Heading>
       </LinkStyled>
-      <Price>${props.price.toFixed(2)}</Price>
     </ItemThumbnailStyled>
   )
 }
