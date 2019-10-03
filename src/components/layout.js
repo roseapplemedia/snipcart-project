@@ -7,7 +7,7 @@ import HeaderMain from "./Headers/HeaderMain"
 import HeaderMinor from "./Headers/HeaderMinor"
 
 const PageWrapper = styled.div`
-  width: 95vw;
+  width: 95%;
   margin: 0 auto;
 `
 
