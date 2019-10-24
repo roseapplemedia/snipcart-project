@@ -1,5 +1,5 @@
 ---
-title: Flower Collar
+title: Leashes
 date: 2019-06-19
 id: 1
 price: 18

@@ -1,12 +1,10 @@
-// This is the homepage.
-
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 
-import ItemThumbnail from "../components/ItemThumbnail/ItemThumbnail"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import ItemThumbnail from "../../components/ItemThumbnail/ItemThumbnail"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
 const ThumbnailsWrapper = styled.div`
   width: 100%;
@@ -31,8 +29,8 @@ class BlogIndex extends React.Component {
             const { title, image, price } = node.frontmatter
             return (
               <ItemThumbnail
-                // key={node.fields.slug}
-                link={node.frontmatter.url}
+                key={node.fields.slug}
+                link={node.fields.slug}
                 heading={title}
                 image={image.childImageSharp.fluid}
                 price={price}
@@ -54,13 +52,17 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { id: { eq: 1 } } }) {
+    allMarkdownRemark(filter: { frontmatter: { id: { eq: 6 } } }) {
       edges {
         node {
           excerpt
+          fields {
+            slug
+          }
           frontmatter {
+            price
             title
-            url
+            id
             image {
               childImageSharp {
                 fluid {

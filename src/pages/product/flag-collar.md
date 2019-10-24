@@ -1,8 +1,9 @@
 ---
 title: Flag Collar
 date: 2019-06-19
-id: 2
+id: 7
 price: 18
+url: http://localhost:8000/cat-collar-product/
 image: ./flag-collar.jpg
 description: Patrotic flag for any occasion.
 customField:
