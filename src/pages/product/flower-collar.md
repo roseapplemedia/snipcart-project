@@ -1,17 +1,17 @@
 ---
 title: Flower Collar
-date: 2019-06-19
-id: 6
+category: cat-collar
 price: 18
-url: http://localhost:8000/cat-collar-product/
+url: /cat-collar-product/
 image: ./flower-collar.jpg
-description: Patrotic flag for any occasion.
+description: Spruce up for springtime..
 customField:
   name: Pack Size
   values:
     [
-      { name: "Small - 18.00", priceChange: 0 },
-      { name: "Medium - 20.00", priceChange: 2.00 },
-      { name: "Large - 25.00", priceChange: 5.00 },
+      { name: "X-Small - 18.00", priceChange: 0 },
+      { name: "Small - 20.00", priceChange: 2.00 },
+      { name: "Medium - 23.00", priceChange: 5.00 },
+      { name: "Large - 25.00", priceChange: 7.00 },
     ]
 ---

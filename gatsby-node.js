@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
     `
       {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___id], order: DESC }
+          sort: { fields: [frontmatter___category], order: DESC }
           limit: 1000
         ) {
           edges {

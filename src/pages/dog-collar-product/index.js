@@ -52,7 +52,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { id: { eq: 7 } } }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "dog-collar" } } }
+    ) {
       edges {
         node {
           excerpt
@@ -62,7 +64,7 @@ export const pageQuery = graphql`
           frontmatter {
             price
             title
-            id
+            category
             image {
               childImageSharp {
                 fluid {

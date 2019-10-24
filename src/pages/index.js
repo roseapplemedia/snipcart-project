@@ -54,7 +54,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { id: { eq: 1 } } }) {
+    allMarkdownRemark(filter: { frontmatter: { category: { eq: "front" } } }) {
       edges {
         node {
           excerpt
