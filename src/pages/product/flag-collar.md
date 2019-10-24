@@ -4,7 +4,7 @@ category: dog-collar
 price: 18
 url: /dog-collar-product/
 image: ./flag-collar.jpg
-description: Patrotic flag for any occasion.
+description: Patriotic flag for any occasion.
 customField:
   name: Pack Size
   values:
